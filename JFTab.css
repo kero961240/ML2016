@@ -1,0 +1,14 @@
+﻿/*
+    Jumpeye framework    
+	Version: 1.0.0
+	www.jumpeye.com
+	
+	Created by Jumpeye Components
+ 
+    Tabs
+*/
+
+    /* general settings for all tabs -------- */
+    .tab { font-size: 100%; font-family : Arial, "Helvetica Neue", "Helvetica", Tahoma, Verdana, sans-serif; line-height: 1.5em; }
+    
+    @media only screen and (max-width: 767px) {    }    

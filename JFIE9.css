@@ -1,0 +1,259 @@
+/*
+	Jumpeye framework    
+	Version: 1.0.0
+	www.jumpeye.com
+	
+	Created by Jumpeye Components
+	
+	
+	For IE9
+*/
+
+	/* Buttons */
+	input[type="button"],
+	input[type="submit"],
+	button { filter: none !important; }
+
+	/* padding corrections */
+	.style-1.button, .style-1.medium.button { font-size: 12px; padding: 0 31px 2px; width: auto; height: 32px; line-height: 30px; }
+	 
+	.style-2.button, .style-2.medium.button { font-size: 12px; padding: 0 45px 1px; width: auto; height: 32px; line-height: 31px; }
+
+	.style-4.small.button                   { font-size: 11px; padding: 0 17px 2px; width: auto; height: 29px; line-height: 27px; }
+	.style-4.button, .style-4.medium.button { font-size: 12px; padding: 0 33px 2px; width: auto; height: 32px; line-height: 30px; }
+
+	.style-5.small.button                   { font-size: 11px; padding: 0 16px; width: auto; height: 29px; line-height: 29px; }
+	.style-5.button, .style-5.medium.button { font-size: 12px; padding: 0 31px; width: auto; height: 32px; line-height: 32px; }
+
+	.style-6.button, .style-6.medium.button { font-size: 12px; padding: 0 43px 2px; width: auto; height: 32px; line-height: 30px; }
+
+	.style-7.button, .style-7.medium.button { font-size: 12px; padding: 0 34px 2px; width: auto; height: 32px; line-height: 30px; }
+
+	.style-8.button, .style-8.medium.button { font-size: 12px; padding: 0 34px 2px; width: auto; height: 32px; line-height: 30px; }
+
+	.style-9.button, .style-9.medium.button { font-size: 12px; padding: 0 32px 2px; width: auto; height: 32px; line-height: 30px; }
+
+	.style-10.button, .style-10.medium.button { font-size: 12px; padding: 0 27px 2px; width: auto; height: 32px; line-height: 30px; }
+
+	.style-12.small.button                    { font-size: 11px; padding: 0 21px 2px; width: auto; height: 29px; line-height: 27px; }
+	.style-12.button, .style-11.medium.button { font-size: 12px; padding: 0 32px 2px; width: auto; height: 32px; line-height: 30px; }
+
+	.style-13.button, .style-13.medium.button { font-size: 12px; padding: 0 23px 1px; width: auto; height: 31px; line-height: 30px; }
+
+	.style-14.button, .style-14.medium.button { line-height: 33px; }
+
+	.style-14.button.large { line-height: 42px; }
+		
+		
+	/* Tabs */
+	.tab.style-3 dl *,
+	.tab.style-4 dl *,
+	.tab.style-5 dl *,
+	.tab.style-7 dl *,
+	.tab.style-9 dl *,
+	.tab.style-7 > ul { filter: none !important; }
+
+	.tab.style-7 dl dd a { 
+		border: 0; 
+		height: 46px;
+	}
+
+	.tab.style-7 dl dd a.active { 
+		position: relative;
+		z-index : 9999; 
+		height  : 47px;
+	}
+
+	.tab.style-7 dl dd { 
+		border      : solid 1px #585859;
+		border-width: 1px 1px 0 1px; 
+	}
+
+	.tab.style-7 > ul { margin-top: 1px; }
+		
+	.tab.style-10 dl dd a { line-height: 45px !important; }  
+
+	
+	/* Alerts */
+	.alert.rounded { filter: none !important; }  
+
+	
+	/* Menus */
+	/* style-1 */
+	.menu.style-1 ul.main-level { box-shadow: 1px 1px 4px -1px rgba(0,0,0,0.3) inset, -1px -1px 10px -1px rgba(0,0,0,0.3) inset; }
+	.menu.style-1 ul.sub-level li:last-child { border-bottom-left-radius: 5px; }
+	.menu.style-1 ul.sub-level li:last-child > a { border-bottom: 2px solid #9fa0a2; }
+
+	/* style-2 */
+	.menu.style-2.vertical li,
+	.menu.style-2 ul.main-level { filter: none; }
+
+	/* style-4 */
+	.menu.style-4 ul.main-level ul { filter: none;}
+
+	/* style-5 */
+	.menu.style-5 ul.main-level ul { position: absolute;	top: 35px; }
+	.menu.style-5 ul.sub-level ul  { top: -1px; left: 100%; } 
+
+	
+	/* mobile for style-4, style-5 */
+	@media screen and (max-width: 767px) {		
+		.menu.style-4 ul.main-level,
+		.menu.style-4 ul.sub-level{
+			filter: none !important;
+			background: #f3f3f3 !important;
+		}    
+		
+		.menu.style-5 ul.main-level,
+		.menu.style-5 ul.sub-level{
+			filter: none !important;
+			background: #fff !important;
+		}
+		
+		.menu.style-5 ul.main-level ul{
+			background: #fff !important;
+			position: static;
+		} 
+		
+		.menu.style-5 ul.main-level ul ul{
+			display: block;
+		}   
+	}
+	
+
+	/* Tables */
+	@media only screen and (max-width: 767px){	
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+	
+		.table thead tr {
+			display: block; 
+			position: relative;
+			border: none;    
+		}
+
+		.table td { 
+			border: inherit;
+			position: relative;
+			padding-left: 2px !important; 
+			padding-right: 2px !important;
+			text-align: center !important;
+		}
+		
+		.table td:before { display:none !important;	}
+		
+		/* style-1 */
+		.table.style-1 { 
+			border-left-width: 1px !important;
+			border-right-width: 1px !important;
+		}
+		
+		.table.style-1 thead tr th  {
+			border-right: 1px solid #ddd !important;
+			border-top: 1px solid #ddd !important;    
+		}
+		
+		.table.style-1 thead tr th:last-child  {
+			border-right: none !important;    
+		}
+		
+		.table.style-1 tbody tr td{
+			border-right:  1px solid #ddd !important;  
+			border-bottom: none !important;  
+			border-top: none !important;
+		}
+				
+		.table.style-1 tbody tr td:last-child {
+			border-right:  none !important;
+		}
+		
+		/* style-2 */
+		.table.style-2 { 
+			border: 1px solid !important; 
+			border-color: #ecedee #d6d7d8 #c1c2c2 #d6d7d8 !important;
+		}
+		
+		.table.style-2 thead tr th,
+		.table.style-2 tbody tr td  {
+			border-right: 1px solid #ddd !important;    
+		}
+	  
+		.table.style-2 thead tr th:last-child,
+		.table.style-2 tbody tr td:last-child  {
+			border-right: none !important;    
+		}
+						
+		.table.style-2 tbody tr:first-child td:first-child{
+			border-top: 1px solid #c1c1c1 !important;
+		} 
+		
+		/* style-5 */
+		.table.style-5 tbody tr td {
+			border-left: none !important;
+		}
+		
+		.table.style-5 tbody tr td:last-child{
+			border-right: none !important;
+		}    
+				
+		/* style-6 */  
+		.table.style-6 thead tr th:last-child{
+			border-right: none !important;    
+		}
+		
+		.table.style-6 tbody tr td {
+			border-right: 1px solid #fff !important;
+			border-left: none !important;
+		}
+		
+		.table.style-6 tbody tr td:last-child{
+			border-right: none !important;
+		} 
+		
+		.table.style-6 tbody tr:last-child td:last-child{
+			border-bottom: none !important;
+		}
+		
+		/* style-3 .. style-6 */ 
+		.table.style-3 tbody tr:first-child td,
+		.table.style-4 tbody tr:first-child td,
+		.table.style-5 tbody tr:first-child td,
+		.table.style-6 tbody tr:first-child td { 
+			border-radius: 0px 0px 0px 0px !important;        
+		}
+		
+		.table.style-3 tbody tr:last-child td:first-child,
+		.table.style-4 tbody tr:last-child td:first-child,
+		.table.style-5 tbody tr:last-child td:first-child,
+		.table.style-6 tbody tr:last-child td:first-child {
+			border-bottom-left-radius: 5px !important;
+		}
+
+		.table.style-3 tbody tr:last-child td:last-child,
+		.table.style-4 tbody tr:last-child td:last-child,
+		.table.style-5 tbody tr:last-child td:last-child,
+		.table.style-6 tbody tr:last-child td:last-child {
+			border-bottom-left-radius: 0px !important;
+		}                       
+	}
+
+	
+	/* Typography */
+	ul.circle li,
+	ul.disc li {
+		list-style-type: none;  /* remove default bullets */
+		margin-left: -12px;
+	}
+
+	ul.circle li:before {
+		content: "\25CB\0020"; /* hex */
+	}
+		
+	ul.disc li:before {
+		content: "\25CF\0020"; /* hex */
+	} 
+	
+		
+	/* Tooltips */
+	.jtip { filter: none !important; }       
